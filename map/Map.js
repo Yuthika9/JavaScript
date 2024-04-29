@@ -21,8 +21,9 @@ class CustomMap {
 
         //check if the key value is already present in the array
         const index = this.entries.findIndex(entry => entry.key === key);
-
-        if(index!== -1)
+        const keyFound = index!== -1;
+        
+        if(keyFound)
         {
 
             //if the index is found with the same key value then change the value of that key 
@@ -40,8 +41,9 @@ class CustomMap {
 
         //check if the key is present
         const index = this.entries.findIndex(entry => entry.key === key);
-
-        if(index!== -1)
+        const keyFound = index!== -1;
+        
+        if(keyFound)
         {
 
             this.entries.splice(index,1);
